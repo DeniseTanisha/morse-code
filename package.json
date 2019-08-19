@@ -1,5 +1,13 @@
 {
   "devDependencies": {
     "jest": "^24.9.0"
+  },
+  "name": "morse-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DeniseTanisha/morse-code.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
   }
 }
