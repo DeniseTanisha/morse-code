@@ -1,5 +1,12 @@
-const sum = require("./main");
+const conv = require("./main");
 
-test("adds 1 + 2 to equal 3", () => {
-  expect(sum(1, 2)).toBe(3);
+test.todo("converting Hello World to morse code"),
+  () => {
+    expect(conv(input, output)).tobe(
+      ".... . .-.. .-.. --- / .-- --- .-. .-.. -.. "
+    );
+  };
+
+it("should render one input box", () => {
+  expect(find("InputBox").length).toEqual(1);
 });
