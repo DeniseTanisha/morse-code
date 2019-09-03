@@ -57,23 +57,26 @@ const morseKey = {
 };
 
 // words to morse
+const typedin = document.getElementById("typedin").value
 
-decodeMorse = function(morseCode) {
-  function decodeMorseLetter(Letter) {
-    return morseKey[letter];
-  }
-  function decodeMorseWord(word) {
-    return word
-      .split("")
-      .map(decodeMorseLetter)
-      .join("");
-  }
-  return morseCode
-    .trim()
-    .split(" ")
-    .map(decodeMorseWord)
-    .join("");
-};
+const translate = () => {
+  console.log("fegsefd")
+typedin.split(" ").map(function(word) {
+  word.split("").map(function(letter){
+    typedinConverted.push(morseKey[letter]);
+    typedinConverted.push(" ");
+  });
+  typedinConverted.push("\xaO\xaO\xaO\xaO");
+});
+}
+document.getElementById("translated").innerHTML =typedinConverted.join(
+  ""
+);
+
+
+
+
+
 
 function conv() {
   var input = "Hello World";
